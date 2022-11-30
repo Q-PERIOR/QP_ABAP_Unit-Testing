@@ -21,10 +21,10 @@ steps:
 
 - script: |
     npm start -- --username=$(username) --password=$(password) --package=$(package) --file=$(file)
-  displayName: 'npm start (run ABAP Unit-Testing)'
+  displayName: 'ABAP Unit-Testing'
 
 - task: PublishTestResults@2
   inputs:
     testResultsFormat: 'JUnit'
     testResultsFiles: '**/$(file)'
-    testRunTitle: 'ABAP Unit-Testing'
+    testRunTitle: 'publish ABAP Unit-Testing results'
