@@ -1,0 +1,28 @@
+{
+    "name": "crm_test_runner",
+    "version": "0.1.0",
+    "description": "Run AUnit Test and convert result to JUnit result",
+    "main": "index.js",
+    "scripts": {
+        "test": "./node_modules/.bin/mocha --reporter spec",
+        "start": "node index.js main",
+        "debug": "node --inspect-brk index.js main"
+    },
+    "repository": {
+        "type": "git",
+        "url": "https://trygghetsradet.visualstudio.com/Trr/_git/CRM_TEST_RUNNER"
+    },
+    "author": "Mattias Johansson",
+    "license": "MIT",
+    "dependencies": {
+        "fs": "^0.0.1-security",
+        "request": "^2.88.0",
+        "request-promise": "^4.2.2",
+        "xslt-processor": "^0.10.1",
+        "yargs": "^12.0.5"
+    },
+    "devDependencies": {
+        "chai": "^4.2.0",
+        "mocha": "^5.2.0"
+    }
+}

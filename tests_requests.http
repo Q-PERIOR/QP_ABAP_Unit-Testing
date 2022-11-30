@@ -1,0 +1,31 @@
+### demo get call
+get https://s4htcsaptui.westeurope.cloudapp.azure.com:44301/sap/opu/odata/SAP/adt_srv
+Authorization: Basic 4112:mulitzka@SAP22
+X-CSRF-Token: fetch
+
+### demo post call
+post https://s4htcsaptui.westeurope.cloudapp.azure.com:44301/sap/bc/adt/abapunit/testruns
+Authorization: Basic 4112:mulitzka@SAP22
+X-CSRF-Token: uD2N26FGH2B88QJ5Bfb-tg==
+Accept: */*
+
+<?xml version="1.0" encoding="UTF-8"?>
+  <aunit:runConfiguration xmlns:aunit="http://www.sap.com/adt/aunit">
+  <external>
+    <coverage active="false"/>
+  </external>
+  <options>
+    <uriType value="semantic"/>
+    <testDeterminationStrategy sameProgram="true" assignedTests="false" appendAssignedTestsPreview="true"/>
+    <testRiskLevels critical="true" dangerous="true" harmless="true"/>
+    <testDurations long="true" medium="true" short="true"/>
+    <withNavigationUri enabled="false"/>
+  </options>
+  <adtcore:objectSets xmlns:adtcore="http://www.sap.com/adt/core">
+    <objectSet kind="inclusive">
+      <adtcore:objectReferences>
+        <adtcore:objectReference adtcore:uri="/sap/bc/adt/oo/classes/zcl_azure_unit_test"/>
+      </adtcore:objectReferences>
+    </objectSet>
+  </adtcore:objectSets>
+</aunit:runConfiguration>
