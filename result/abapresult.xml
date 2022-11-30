@@ -1,0 +1,4 @@
+<testsuites tests="2" failures="1"><testsuite tests="2" failures="1" package="/sap/bc/adt/oo/classes/zcl_azure_unit_test"><testcase name=" - ZCL_AZURE_UNIT_TEST - DUMMY_TEST" classname="/sap/bc/adt/oo/classes/zcl_azure_unit_test#testclass=LCL_SOME_ACTION;testmethod=DUMMY_TEST" time="0"/><testcase name=" - ZCL_AZURE_UNIT_TEST - DUMMY_TEST_2" classname="/sap/bc/adt/oo/classes/zcl_azure_unit_test#testclass=LCL_SOME_ACTION;testmethod=DUMMY_TEST_2" time="0"><failure message="Critical Assertion Error: 'Dummy_Test_2: ASSERT_EQUALS'" type="critical">Different values
+Expected [0] Actual [1]
+Test 'LCL_SOME_ACTION-&gt;DUMMY_TEST_2' in Main Program 'ZCL_AZURE_UNIT_TEST===========CP'
+</failure></testcase></testsuite></testsuites>
