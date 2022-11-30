@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+  <aunit:runConfiguration xmlns:aunit="http://www.sap.com/adt/aunit">
+  <external>
+    <coverage active="false"/>
+  </external>
+  <options>
+  <!-- '<options>' nicht in xml-File in GitHub enthalten -->
+    <uriType value="semantic"/>
+    <testDeterminationStrategy sameProgram="true" assignedTests="false" appendAssignedTestsPreview="true"/>
+    <testRiskLevels critical="true" dangerous="true" harmless="true"/>
+    <testDurations long="true" medium="true" short="true"/>
+    <withNavigationUri enabled="false"/>
+  </options>
+  <adtcore:objectSets xmlns:adtcore="http://www.sap.com/adt/core">
+    <objectSet kind="inclusive">
+      <adtcore:objectReferences>
+        <adtcore:objectReference adtcore:uri='/sap/bc/adt/vit/wb/object_type/devck/object_name/{{package}}'/>
+        <!-- in Micha's xml-File stattdessen '<adtcore:objectReference adtcore:uri="/sap/bc/adt/oo/classes/zcl_azure_unit_test"/>' -->
+      </adtcore:objectReferences>
+    </objectSet>
+  </adtcore:objectSets>
+</aunit:runConfiguration>
