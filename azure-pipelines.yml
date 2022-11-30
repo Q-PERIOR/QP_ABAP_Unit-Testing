@@ -26,5 +26,5 @@ steps:
 - task: PublishTestResults@2
   inputs:
     testResultsFormat: 'JUnit'
-    testResultsFiles: '**/result/abapResultFile.xml'
+    testResultsFiles: '**/$(file)'
     testRunTitle: 'ABAP Unit-Testing'
