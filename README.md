@@ -14,7 +14,7 @@ The respective **_Node.js-App_** is pushed into a **_GitHub repository_**.<br>
 An **_Azure DevOps Pipeline_** is placed on the **_GitHub repository_**.<br>
 
 Hence, we can call the **_Unit-Tests_** by running the **_Node.js-App_** through running an **_Azure DevOps Pipeline_**.<br>
-Test results can be displayed as expressive **_graphics_**.
+By using Azure DevOps, test results can be displayed as expressive **_graphics_**.
 <br><br><br>
 
 
