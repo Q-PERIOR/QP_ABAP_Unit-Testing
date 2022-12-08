@@ -1,15 +1,21 @@
 # QP_ABAP_Unit-Testing
-ABAP Unit-Testing
 
 
-Programmaufruf mit bspw. "Z2607_AZURE_UNIT_TEST" als ABAP Unit-Testing Package:
+### Motivation
 
-```
-npm start -- --username=<S4H-User> --password=<S4H-Password> --package=<Z2607_AZURE_UNIT_TEST> --file=<result/abapResultFile.xml>
-```
+*basic motivation*
 
-'username', 'password', 'package' sind obligatorisch.
 
-'file' beschreibt die Zieldatei für die Testergebnisse die erstellt werden soll.
+### Application and Capabilities
 
-'GET-Url' und 'POST-Url' werden in Config-Datei eingegeben!
+*general application and capabilities*
+
+
+##### VSC-App
+
+*application and capabilities of VSC-App*
+
+
+##### Azure DevOps Pipeline
+
+*application and capabilities of Azure DevOps Pipeline*
