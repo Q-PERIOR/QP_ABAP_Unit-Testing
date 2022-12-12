@@ -20,23 +20,44 @@ By using Azure DevOps, test results can be displayed as expressive **_graphics_*
 
 ## Application and Capabilities
 
-- general application and capabilities
+**_ABAP Unit-Testing_** is run by a **_Node.js-APP_**, which can later be integrated in an **_Azure DevOps Pipeline_**, so that commits in the underlying GitHub repository automatically trigger and initiate the Node.js-APP and thereby run ABAP Unit-Testing.
+<br><br>
+
+
+### Node.js-App:
+
+The Node.js-App consists of an index.js-file, a Config-file, a XML-file and a XSL-file.
 <br>
 
+#### index.js-file:
 
-### VSC-App
+To run the ABAP Unit-Tests we need to get a CSRF-Token in the first place, which is done via an HTTP GET-request.<br>
+This CSRF-Token is then included in the HTTP POST-request to run the ABAP Unit-Tests. In the same POST-request we incorporate our XML-file as body.<br>
+Using an XSL-file, we then generate JUnit test results from AUnit test results. These JUnit test results are stored in a new XML-file.<br>
+The JUnit format of the test results enables us to create expressive test result graphics later on through the Azure DevOps Pipeline.<br><br>
+As usual our index.js-file can be called via `npm start`. As variables, S4H-User and S4H-Password are required for authorization purposes of the HTTP requests, an ABAP S4H packages is required as package which consists the testing class, a path and file-name can be optionally added for storing test results. The URLs for our HTTP requests are manually inserted in the Config-File.<br>
+```
+npm start -- --username=<S4H-User> --password=<S4H-Password> --package=<Z2607_AZURE_UNIT_TEST> --file=<result/abapResultFile.xml>
+```
 
-- application and capabilities of VSC-App:
-- refer to the several files
-- key code snippets of the vsc-app
-- npm start -- ...
-- ...
+#### Config-file:
+
+Besides defining a structure for the command line inputs, the Config-file serves as destination to manually insert the URLs for our HTTP requests.
 <br>
 
+#### XML-file:
 
-### Azure DevOps Pipeline
+sldjf
+<br>
 
-- application and capabilities of Azure DevOps Pipeline:
+#### XSL-file:
+
+lsdjf
+<br><br>
+
+
+### Azure DevOps Pipeline:
+
 - refer to azure-pipelines.yml file
 - key code snippets of the azure-pipelines.yml file
 - publish results as graphics
