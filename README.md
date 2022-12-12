@@ -42,17 +42,17 @@ npm start -- --username=<S4H-User> --password=<S4H-Password> --package=<Z2607_AZ
 
 #### Config-file:
 
-Besides defining a structure for the command line inputs, the Config-file serves as destination to manually insert the URLs for our HTTP requests.
+Besides defining a structure to carry the specified command line variables, the Config-file serves as destination to manually insert the URLs used in our HTTP requests.
 <br>
 
 #### XML-file:
 
-sldjf
+The XML-file, which is used as body in the ABAP Unit-Testing POST-request, includes a call to run ABAP Unit-Tests contained in the package the user specifies in the command line.
 <br>
 
 #### XSL-file:
 
-lsdjf
+The XSL-file, contained in the same xml-Folder as the XML-file, is used to transform the ABAP Unit-Testing results from AUnit to JUnit format.
 <br><br>
 
 
