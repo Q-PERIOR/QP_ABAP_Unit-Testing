@@ -6,7 +6,7 @@ ABAP Unit-Testing integrated on Azure DevOps.
 
 ## Motivation and Basics
 
-The key motivation is to **_automate Eclipse ABAP Unit-Testing_**.
+The key motivation is to **_automate ABAP Unit-Testing_**.
 This is realized by running respective ABAP Unit-Tests via **_Azure DevOps Pipelines_**.
 
 A S/4HANA package containing **_Unit-Testing classes_** is called by an HTTP POST-request in a **_Node.js-App_**.<br>
