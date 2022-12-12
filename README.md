@@ -58,7 +58,16 @@ The XSL-file, contained in the same xml-Folder as the XML-file, is used to trans
 
 ### Azure DevOps Pipeline:
 
-- refer to azure-pipelines.yml file
-- key code snippets of the azure-pipelines.yml file
-- publish results as graphics
-- ...
+The just explained Node.js-App is pushed into a GitHub repository, upon we place an Azure DevOps Pipeline. Consequently we can run our Node.js-App through our Pipeline. This is our main goal, as we want to be able to run ABAP Unit-Tests automatically, which is now possible, as our Pipeline can be automatically initiated by commits into the underlying GitHub repository.<br>
+We integrate our Node.js-App in the yml-Pipeline-File as follows:
+```
+- script: |
+    npm install
+  displayName: 'npm install'
+
+- script: |
+    npm start -- --username=$(username) --password=$(password) --package=$(package) --file=$(file)
+  displayName: 'ABAP Unit-Testing'
+```
+The variables username, password, package and file can be defined in Azure DevOps.<br>
+By selecting the pipeline task "Publish Test Results" in Azure DevOps, we can now integrate a task into our pipeline which publishes JUnit test results as graphics.
